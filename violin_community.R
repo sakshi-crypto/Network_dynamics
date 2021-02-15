@@ -7,7 +7,7 @@ library(grid)
 library(gridExtra)
 library(data.table)
 violin_data<-list()
-setwd("/Network_dynamics/datasetgraph")#path to excel files
+setwd("/Network_dynamics/datasetgraph")#path to where excel files
 mydir<-"violinfiles"
 community_files<-list.files(path=mydir,pattern = "*.xlsx",full.names = TRUE)
 file_table<-lapply(community_files, read_excel)
